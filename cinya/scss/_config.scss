@@ -1,0 +1,128 @@
+$primary-title-color: #b67c00;
+$second-title-color: #6e695d;
+$primary-text-color: #444;
+$sceond-text-color: #5d5d5d;
+$main-border-color: #1676b2;
+
+$sm-width: 768px;
+$md-width: 992px;
+$lg-width: 1200px;
+$xl-width: 1600px;
+
+body {
+    font-family: "微軟正黑體", "sans-serif";
+    color: $sceond-text-color;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+$spaceamounts: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+    .mt-#{$space} {
+        margin-top: #{$space}em;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}em;
+    }
+
+    .mr-#{$space} {
+        margin-right: #{$space}em;
+    }
+
+    .ml-#{$space} {
+        margin-left: #{$space}em;
+    }
+
+    .mx-#{$space} {
+        margin-left: #{$space}em;
+        margin-right: #{$space}em;
+    }
+
+    .my-#{$space} {
+        margin-top: #{$space}em;
+        margin-bottom: #{$space}em;
+    }
+
+    .pt-#{$space} {
+        padding-top: #{$space}em;
+    }
+
+    .pb-#{$space} {
+        padding-bottom: #{$space}em;
+    }
+
+    .pr-#{$space} {
+        padding-right: #{$space}em;
+    }
+
+    .pl-#{$space} {
+        padding-left: #{$space}em;
+    }
+
+    .px-#{$space} {
+        padding-left: #{$space}em;
+        padding-right: #{$space}em;
+    }
+
+    .py-#{$space} {
+        padding-top: #{$space}em;
+        padding-bottom: #{$space}em;
+    }
+}
+
+.w100p {
+    width: 100%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.animation-delay-2 {
+    -webkit-animation-delay: .2s!important;
+    animation-delay: .2s!important;
+}
+
+.animation-delay-4 {
+    -webkit-animation-delay: .4s!important;
+    animation-delay: .4s!important;
+}
+
+.animation-delay-6 {
+    -webkit-animation-delay: .6s!important;
+    animation-delay: .6s!important;
+}
+
+.animation-delay-8 {
+    -webkit-animation-delay: .8s!important;
+    animation-delay: .8s!important;
+}

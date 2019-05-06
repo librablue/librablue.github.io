@@ -1,0 +1,88 @@
+$navbar-height: 110px;
+
+.cy-navbar {
+    border-bottom: 8px solid #ababab;
+    margin-bottom: 0;
+    .logo {
+        line-height: $navbar-height;
+    }
+
+    .navbar-toggle {
+        .icon-bar {
+            background-color: #000;
+        }
+    }
+
+    .navbar-nav {
+        padding-top: 30px;
+        padding-left: 40px;
+        background: #fff;
+        .active {
+            a {
+                background-color: transparent;
+                color: #ffc600;
+                &:hover {
+                    background-color: transparent;
+                    color: #ffc600;
+                }
+            }
+        }
+        .open {
+            a {
+                background-color: transparent;
+            }
+        }
+        a {
+            line-height: calc(#{$navbar-height} - 30px);
+            color: #5d5d5d;
+            font-weight: 700;
+            font-size: 26px;
+            padding: 0 16px;
+            transition: color .3s;
+            &:hover {
+                background-color: transparent;
+                color: #fed136;
+            }
+            &:focus {
+                outline: none;
+                background: transparent;
+            }
+        }
+        .open .dropdown-menu > li > a {
+            padding: 0 15px;
+            background-color: transparent;
+            line-height: calc(#{$navbar-height} - 40px);
+        }
+    }
+}
+
+.cy-container {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+@media (max-width: $xl-width) {
+    .cy-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: $xl-width) {
+    .cy-navbar .navbar-nav a {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: $sm-width) {
+    .cy-navbar .navbar-nav a {
+        line-height: calc(#{$navbar-height} - 40px);
+        font-size: 26px;
+        padding: 0;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        background-color: transparent;
+        line-height: calc(#{$navbar-height} - 60px);
+    }
+}
