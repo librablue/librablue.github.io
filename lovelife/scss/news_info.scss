@@ -1,0 +1,55 @@
+@import 'config';
+@import 'nav';
+@import 'side';
+@import 'footer';
+@import 'gotop';
+@import 'breadcrumb';
+
+.main {
+    h1 {
+        color: $primary-title-color;
+        font-weight: 700;
+        padding-bottom: 16px;
+        margin-bottom: 26px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        padding: 15px 30px;
+    }
+
+    .news-title {
+        position: relative;
+        .publish-time {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    .news-content {
+        padding: 2em;
+
+        p {
+            line-height: 1.8;
+        }
+    }
+}
+
+@media (max-width: $sm-width) {
+    .main {
+        h1 {
+            font-size: 1.8em;
+        }
+        .content {
+            padding: 15px;
+        }
+
+        .news-title {
+            .publish-time {
+                position: static;
+            }
+        }
+    }
+}
