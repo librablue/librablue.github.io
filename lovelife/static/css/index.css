@@ -434,6 +434,8 @@ a:hover {
 
 .ll-navbar .logo {
   line-height: 60px;
+  width: 254px;
+  padding: 0 10px;
 }
 
 .ll-navbar .navbar-toggle .icon-bar {
@@ -447,12 +449,12 @@ a:hover {
 
 .ll-navbar .navbar-nav .active a {
   background-color: transparent;
-  color: #ffc600;
+  color: #85ef47;
 }
 
 .ll-navbar .navbar-nav .active a:hover {
   background-color: transparent;
-  color: #ffc600;
+  color: #85ef47;
 }
 
 .ll-navbar .navbar-nav a {
@@ -475,8 +477,15 @@ a:hover {
 }
 
 .ll-container {
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+  .ll-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 footer {
@@ -527,66 +536,63 @@ footer {
   border-bottom: 16px solid #fff;
 }
 
-.main-title {
-  color: #b67c00;
-  font-weight: 700;
-  margin: 0;
-}
-
-.sub-title {
-  color: #6e695d;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 6px 0 40px;
-}
-
-.about p {
-  font-size: 1.2em;
-  line-height: 2em;
-}
-
-.about p.strong {
-  color: #444;
-  font-weight: 900;
-  font-style: italic;
-  padding-top: 20px;
-}
-
-.about .about-img {
-  -webkit-box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.8);
-          box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.8);
-}
-
-.service {
-  background-image: url("../image/index/bg1.png");
-  background-size: cover;
+.main {
+  background-image: url("../image/index/bg2.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
-  padding-top: 60px;
+  background-size: cover;
+  padding: 2.5em;
 }
 
-.service .circle {
-  border: 10px solid #ccccbc;
-  border-radius: 50%;
-  padding: 1px;
+.main .company-info {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 40px;
+  color: #144370;
+}
+
+.main .company-info h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.main .company-info p {
+  line-height: 1.8;
+}
+
+.main .services {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.main .services .col-md-4 {
+  padding: 2em;
+}
+
+.main .services .service {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
   overflow: hidden;
 }
 
-.service .circle:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.service .circle img {
+.main .services .service .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  border-radius: 50%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  padding: 10px;
+  color: #fff;
 }
 
-.service h3 {
-  color: #444;
+.main .services .service .title-zh {
+  font-size: 2em;
   font-weight: 700;
+}
+
+.main .services .service .title-en {
+  font-size: 1em;
 }
 /*# sourceMappingURL=index.css.map */

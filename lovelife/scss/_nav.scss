@@ -53,6 +53,8 @@ $navbar-top-height: 42px;
     margin-bottom: 0;
     .logo {
         line-height: $navbar-height;
+        width: 254px;
+        padding: 0 10px;
     }
 
     .navbar-toggle {
@@ -67,10 +69,10 @@ $navbar-top-height: 42px;
         .active {
             a {
                 background-color: transparent;
-                color: #ffc600;
+                color: #85ef47;
                 &:hover {
                     background-color: transparent;
-                    color: #ffc600;
+                    color: #85ef47;
                 }
             }
         }
@@ -93,6 +95,13 @@ $navbar-top-height: 42px;
 }
 
 .ll-container {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+@media (max-width: $sm-width) {
+    .ll-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
