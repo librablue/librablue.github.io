@@ -489,12 +489,10 @@ a:hover {
 }
 
 footer {
-  background: #f1f1f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#fff));
-  background: linear-gradient(to bottom, #dedede, #fff);
-  padding: 70px 0 25px;
+  background: #404040;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  border-bottom: 18px solid #b6003a;
 }
 
 #gotop {
@@ -536,49 +534,63 @@ footer {
   border-bottom: 16px solid #fff;
 }
 
-.main {
+.layer1 {
+  background-image: url("../image/index/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+.layer2 {
   background-image: url("../image/index/bg2.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  padding: 2.5em;
+  background-size: 100%;
 }
 
-.main .company-info {
+.main {
+  padding: 4em 0 12em;
+}
+
+.main .company-container {
   border: 3px solid #fff;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.5);
   padding: 20px 40px;
   color: #144370;
+  width: 90%;
 }
 
-.main .company-info h1 {
-  font-size: 32px;
+.main .company-container img {
+  margin-top: 104px;
+}
+
+.main .company-container h1 {
+  font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 1em;
 }
 
-.main .company-info p {
-  line-height: 1.8;
+.main .company-container p {
+  line-height: 1.6;
+  font-size: 1.5em;
 }
 
-.main .services {
+.main .service-container {
   text-align: center;
-  margin-top: 2em;
+  width: 90%;
+  padding: 6em 0 0;
 }
 
-.main .services .col-md-4 {
-  padding: 2em;
-}
-
-.main .services .service {
+.main .service-container .service {
   position: relative;
   display: inline-block;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 1em;
 }
 
-.main .services .service .overlay {
+.main .service-container .service .overlay {
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -587,12 +599,66 @@ footer {
   color: #fff;
 }
 
-.main .services .service .title-zh {
+.main .service-container .service .title-zh {
   font-size: 2em;
   font-weight: 700;
 }
 
-.main .services .service .title-en {
+.main .service-container .service .title-en {
   font-size: 1em;
+}
+
+.products {
+  padding-bottom: 6em;
+}
+
+.products h2 {
+  text-align: center;
+  color: #144370;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.products .product-container {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 4em;
+}
+
+.products .product-container .img-wrap {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 40px;
+  background: #fff;
+}
+
+.products .product-container .product {
+  padding: 1em;
+}
+
+.products .product-container .product-name {
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.social {
+  background: #fff;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.social a {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.social a:first-child {
+  border-right: 1px solid #eee;
 }
 /*# sourceMappingURL=index.css.map */

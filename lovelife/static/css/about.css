@@ -564,12 +564,10 @@ a:hover {
 }
 
 footer {
-  background: #f1f1f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#fff));
-  background: linear-gradient(to bottom, #dedede, #fff);
-  padding: 70px 0 25px;
+  background: #404040;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  border-bottom: 18px solid #b6003a;
 }
 
 #gotop {
