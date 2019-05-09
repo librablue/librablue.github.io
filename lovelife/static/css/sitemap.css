@@ -375,15 +375,15 @@ a:hover {
 
 .navbar-top {
   position: relative;
-  height: 42px;
+  height: 60px;
   z-index: 1001;
 }
 
 .navbar-top .search {
   position: relative;
   display: inline-block;
-  height: 42px;
-  padding-top: 10px;
+  height: 60px;
+  padding-top: 16px;
 }
 
 .navbar-top .search input {
@@ -391,12 +391,14 @@ a:hover {
   font-size: 14px;
   padding-left: 6px;
   padding-right: 30px;
-  width: 150px;
+  width: 100%;
+  max-width: 210px;
+  height: 30px;
 }
 
 .navbar-top .search button {
   position: absolute;
-  top: 10px;
+  top: 18px;
   right: 2px;
   background: transparent;
   border: none;
@@ -460,6 +462,7 @@ a:hover {
 .ll-navbar .navbar-nav a {
   line-height: calc(60px - 24px);
   color: #727272;
+  font-size: 1.1em;
   font-weight: 700;
   padding: 24px 16px 0;
   -webkit-transition: color 0.3s;

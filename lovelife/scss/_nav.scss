@@ -1,5 +1,5 @@
 $navbar-height: 60px;
-$navbar-top-height: 42px;
+$navbar-top-height: 60px;
 
 .navbar-top {
     position: relative;
@@ -9,18 +9,20 @@ $navbar-top-height: 42px;
         position: relative;
         display: inline-block;
         height: $navbar-top-height;
-        padding-top: 10px;
+        padding-top: 16px;
 
         input {
             border: 1px solid #eee;
             font-size: 14px;
             padding-left: 6px;
             padding-right: 30px;
-            width: 150px;
+            width: 100%;
+            max-width: 210px;
+            height: 30px;
         }
         button {
             position: absolute;
-            top: 10px;
+            top: 18px;
             right: 2px;
             background: transparent;
             border: none;
@@ -79,6 +81,7 @@ $navbar-top-height: 42px;
         a {
             line-height: calc(#{$navbar-height} - 24px);
             color: #727272;
+            font-size: 1.1em;
             font-weight: 700;
             padding: 24px 16px 0;
             transition: color 0.3s;

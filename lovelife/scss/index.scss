@@ -51,6 +51,14 @@
             border-radius: 20px;
             overflow: hidden;
             margin-bottom: 1em;
+            img {
+                transition: all .3s;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
             .overlay {
                 position: absolute;
                 bottom: 0;
@@ -115,5 +123,19 @@
         &:first-child {
             border-right: 1px solid #eee;
         }
+    }
+}
+
+@media screen and (max-width: $md-width) {
+    .layer1 {
+        background-image: none;
+        background: linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
+        background: -moz-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
+        background: -webkit-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
+        background: -o-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
+    }
+
+    .layer2 {
+        background-image: none;
     }
 }
