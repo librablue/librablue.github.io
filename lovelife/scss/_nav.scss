@@ -8,8 +8,7 @@ $navbar-top-height: 60px;
     .search {
         position: relative;
         display: inline-block;
-        height: $navbar-top-height;
-        padding-top: 16px;
+        line-height: $navbar-top-height;
 
         input {
             border: 1px solid #eee;
@@ -22,7 +21,7 @@ $navbar-top-height: 60px;
         }
         button {
             position: absolute;
-            top: 18px;
+            top: 0;
             right: 2px;
             background: transparent;
             border: none;

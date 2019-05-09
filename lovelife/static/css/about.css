@@ -382,8 +382,7 @@ a:hover {
 .navbar-top .search {
   position: relative;
   display: inline-block;
-  height: 60px;
-  padding-top: 16px;
+  line-height: 60px;
 }
 
 .navbar-top .search input {
@@ -398,7 +397,7 @@ a:hover {
 
 .navbar-top .search button {
   position: absolute;
-  top: 18px;
+  top: 0;
   right: 2px;
   background: transparent;
   border: none;
