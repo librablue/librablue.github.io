@@ -460,6 +460,10 @@ a:hover {
   padding: 0 10px;
 }
 
+.ll-navbar .navbar-toggle {
+  margin-top: 15px;
+}
+
 .ll-navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
@@ -511,10 +515,21 @@ a:hover {
   }
 }
 
+.share {
+  background: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.share a {
+  display: inline-block;
+  margin: 10px;
+}
+
 footer {
   background: #404040;
   color: #fff;
-  padding: 20px 0;
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -557,22 +572,18 @@ footer {
   border-bottom: 12px solid #fff;
 }
 
-.layer1 {
-  background-image: url("../image/index/bg1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-}
-
-.layer2 {
+.layer {
   background-image: url("../image/index/bg2.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   background-size: 100%;
 }
 
 .main {
-  padding: 4em 0 12em;
+  background-image: url("../image/index/bg1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40px 0 12em;
 }
 
 .main .company-container {
@@ -585,24 +596,24 @@ footer {
 }
 
 .main .company-container img {
-  margin-top: 104px;
+  margin-top: 3em;
 }
 
 .main .company-container h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   margin-bottom: 1em;
 }
 
 .main .company-container p {
-  line-height: 1.6;
-  font-size: 1.5em;
+  line-height: 1.8;
+  margin-bottom: 1em;
 }
 
 .main .service-container {
   text-align: center;
   width: 90%;
-  padding: 6em 0 0;
+  padding: 72px 0 0;
 }
 
 .main .service-container .service {
@@ -642,14 +653,14 @@ footer {
 }
 
 .products {
-  padding-bottom: 6em;
+  padding-bottom: 4em;
 }
 
 .products h2 {
   text-align: center;
   color: #144370;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .products .product-container {
@@ -679,39 +690,21 @@ footer {
   padding: 12px 0;
 }
 
-.social {
-  background: #fff;
-  padding: 20px 0;
-  margin: 0;
-}
-
-.social a {
-  float: left;
-  width: 50%;
-  text-align: center;
-}
-
-.social a:first-child {
-  border-right: 1px solid #eee;
-}
-
 @media screen and (max-width: 992px) {
-  .layer1 {
+  .main {
+    background-image: none;
+  }
+  .main .company-container h1 {
+    text-align: center;
+  }
+  .main .company-container p {
+    text-align: center;
+  }
+  .layer {
     background-image: none;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(34%, #91e2fe), color-stop(60%, #e2edf8));
     background: linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
     background: -o-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-  }
-  .layer2 {
-    background-image: none;
-  }
-  .main .company-container h1 {
-    font-size: 2em;
-    text-align: center;
-  }
-  .main .company-container p {
-    font-size: 1.2em;
-    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

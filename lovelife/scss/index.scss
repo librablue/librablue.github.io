@@ -1,24 +1,21 @@
 @import 'config';
 @import 'nav';
+@import 'share';
 @import 'footer';
 @import 'gotop';
 
-.layer1 {
-    background-image: url('../image/index/bg1.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-}
-
-.layer2 {
+.layer {
     background-image: url('../image/index/bg2.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: 100%;
 }
-.main {
-    padding: 4em 0 12em;
 
+.main {
+    background-image: url('../image/index/bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 40px 0 12em;
     .company-container {
         border: 3px solid #fff;
         border-radius: 30px;
@@ -27,23 +24,23 @@
         color: #144370;
         width: 90%;
         img {
-            margin-top: 104px;
+            margin-top: 3em;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: 700;
             margin-bottom: 1em;
         }
         p {
-            line-height: 1.6;
-            font-size: 1.5em;
+            line-height: 1.8;
+            margin-bottom: 1em;
         }
     }
 
     .service-container {
         text-align: center;
         width: 90%;
-        padding: 6em 0 0;
+        padding: 72px 0 0;
 
         .service {
             position: relative;
@@ -79,12 +76,12 @@
 }
 
 .products {
-    padding-bottom: 6em;
+    padding-bottom: 4em;
     h2 {
         text-align: center;
         color: #144370;
         font-weight: 700;
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .product-container {
         border: 3px solid #fff;
@@ -111,44 +108,25 @@
     }
 }
 
-.social {
-    background: #fff;
-    padding: 20px 0;
-    margin: 0;
-    a {
-        float: left;
-        width: 50%;
-        text-align: center;
+@media screen and (max-width: $md-width) {
+    .main {
+        background-image: none;
 
-        &:first-child {
-            border-right: 1px solid #eee;
+        .company-container {
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
         }
     }
-}
 
-@media screen and (max-width: $md-width) {
-    .layer1 {
+    .layer {
         background-image: none;
         background: linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
         background: -moz-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
         background: -webkit-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
         background: -o-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-    }
-
-    .layer2 {
-        background-image: none;
-    }
-
-    .main {
-        .company-container {
-            h1 {
-                font-size: 2em;
-                text-align: center;
-            }
-            p {
-                font-size: 1.2em;
-                text-align: center;
-            }
-        }
     }
 }

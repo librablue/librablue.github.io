@@ -460,6 +460,10 @@ a:hover {
   padding: 0 10px;
 }
 
+.ll-navbar .navbar-toggle {
+  margin-top: 15px;
+}
+
 .ll-navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
@@ -589,7 +593,7 @@ a:hover {
 footer {
   background: #404040;
   color: #fff;
-  padding: 20px 0;
+  padding-top: 16px;
   text-align: center;
 }
 
