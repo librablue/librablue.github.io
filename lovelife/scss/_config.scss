@@ -10,7 +10,7 @@ $lg-width: 1200px;
 $xl-width: 1600px;
 
 body {
-    font-family: "微軟正黑體", "sans-serif";
+    font-family: '微軟正黑體', 'sans-serif';
     color: $sceond-text-color;
     font-size: 16px;
 }
@@ -24,7 +24,6 @@ a {
 }
 
 $spaceamounts: (0, 1, 2, 3, 4, 5);
-
 @each $space in $spaceamounts {
     .mt-#{$space} {
         margin-top: #{$space}em;
@@ -79,6 +78,19 @@ $spaceamounts: (0, 1, 2, 3, 4, 5);
     }
 }
 
+$seconds: (2, 4, 6, 8);
+@each $second in $seconds {
+    .animation-delay-#{$second} {
+        -webkit-animation-delay: calc(0.1 * #{$second}s) !important;
+        animation-delay: calc(0.1 * #{$second}s) !important;
+    }
+
+    .animation-duration-#{$second} {
+        -webkit-animation-duration: #{$second}s !important;
+        animation-duration: #{$second}s !important;
+    }
+}
+
 .w100p {
     width: 100%;
 }
@@ -105,24 +117,4 @@ $spaceamounts: (0, 1, 2, 3, 4, 5);
 
 .text-right {
     text-align: right;
-}
-
-.animation-delay-2 {
-    -webkit-animation-delay: .2s!important;
-    animation-delay: .2s!important;
-}
-
-.animation-delay-4 {
-    -webkit-animation-delay: .4s!important;
-    animation-delay: .4s!important;
-}
-
-.animation-delay-6 {
-    -webkit-animation-delay: .6s!important;
-    animation-delay: .6s!important;
-}
-
-.animation-delay-8 {
-    -webkit-animation-delay: .8s!important;
-    animation-delay: .8s!important;
 }

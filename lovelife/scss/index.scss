@@ -6,7 +6,7 @@
 .layer1 {
     background-image: url('../image/index/bg1.png');
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center center;
     background-size: 100%;
 }
 
@@ -52,7 +52,7 @@
             overflow: hidden;
             margin-bottom: 1em;
             img {
-                transition: all .3s;
+                transition: all 0.3s;
             }
             &:hover {
                 img {
@@ -137,5 +137,18 @@
 
     .layer2 {
         background-image: none;
+    }
+
+    .main {
+        .company-container {
+            h1 {
+                font-size: 2em;
+                text-align: center;
+            }
+            p {
+                font-size: 1.2em;
+                text-align: center;
+            }
+        }
     }
 }
