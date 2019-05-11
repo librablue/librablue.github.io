@@ -12,4 +12,14 @@ $(function () {
     $btnGoTop.on('click', function () {
         $('html,body').animate({ scrollTop: '0px' }, 1000);
     });
+
+    $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop:true,
+        slideMargin: 0,
+        thumbItem: 4,
+        prevHtml: '<img src="static/image/prev.png">',
+        nextHtml: '<img src="static/image/next.png">'
+    });
 });
