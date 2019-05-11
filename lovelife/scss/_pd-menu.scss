@@ -1,0 +1,50 @@
+.pd-menu {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    .title {
+        background-image: url('../image/product/sidebg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        height: 58px;
+        line-height: 58px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .series {
+        & > li > a {
+            display: block;
+            background: #15cda8;
+            color: #fff;
+            border-radius: 4px;
+            padding: 2px 20px;
+            margin: 10px 0;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    }
+
+    .sub {
+        & > li > a {
+            display: block;
+            padding: 4px 20px;
+            border-radius: 4px;
+            color: #4e4e4e;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover {
+                background: #f2f7ff;
+            }
+        }
+        .active > a {
+            background: #f2f7ff;
+        }
+    }
+}

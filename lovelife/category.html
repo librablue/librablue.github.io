@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
-        <link rel="stylesheet" href="static/css/product.css" />
+        <link rel="stylesheet" href="static/css/category.css" />
     </head>
 
     <body>
@@ -104,7 +103,7 @@
                                 <li>
                                     <a href="#">保健系列</a>
                                     <ul class="sub">
-                                        <li><a href="category.html">產品次系列1</a></li>
+                                        <li class="active"><a href="category.html">產品次系列1</a></li>
                                         <li><a href="category.html">產品次系列2</a></li>
                                         <li><a href="category.html">產品次系列3</a></li>
                                         <li><a href="category.html">產品次系列4</a></li>
@@ -145,63 +144,97 @@
                             <li>
                                 <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
                             </li>
-                            <li><a href="#">產品目錄</a></li>
-                            <li class="active">楊山勇力丸</li>
+                            <li class="active">產品目錄</li>
                         </ol>
-                        <h1 class="title">楊山勇力丸</h1>
                         <div class="row">
-                            <div class="col-md-6">
-                                <ul id="lightSlider">
-                                    <li data-thumb="static/image/product/product.png">
-                                        <img src="static/image/product/product.png" />
-                                    </li>
-                                    <li data-thumb="static/image/product/product.png">
-                                        <img src="static/image/product/product.png" />
-                                    </li>
-                                    <li data-thumb="static/image/product/product.png">
-                                        <img src="static/image/product/product.png" />
-                                    </li>
-                                    <li data-thumb="static/image/product/product.png">
-                                        <img src="static/image/product/product.png" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 pl-2">
-                                <div class="pd-name">保健系列 - 楊山勇力丸</div>
-                                <div class="pd-info">
-                                    <div>
-                                        <span class="attr">產地：</span>
-                                        <span class="val">台灣</span>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
                                     </div>
-                                    <div>
-                                        <span class="attr">產品編號：</span>
-                                        <span class="val">A983403982</span>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
                                     </div>
                                 </div>
-                                <button type="button" class="btn-blood">立即詢問</button>
-                                <button type="button" class="btn-gray ml-1">加入詢問清單</button>
                             </div>
-                        </div>
-
-                        <div class="my-4">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#description" data-toggle="tab">產品描述</a></li>
-                                <li><a href="#feature" data-toggle="tab">產品特點</a></li>
-                                <li><a href="#spec" data-toggle="tab">產品規格</a></li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane px-1 py-1 fade in active" id="description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aut ullam minima accusamus reprehenderit laborum doloribus,
-                                    culpa, atque voluptate nesciunt, facilis distinctio perferendis nulla sed? Atque maiores optio ab non!
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
+                                    </div>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="tab-pane px-1 py-1 fade" id="feature">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, eveniet cupiditate? Eaque atque a quam assumenda
-                                    repellendus quidem, ipsum itaque odio eligendi molestiae dignissimos. Vel aspernatur amet autem praesentium esse.
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
+                                    </div>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="tab-pane px-1 py-1 fade" id="spec">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore saepe odit ipsum libero maiores voluptatibus atque
-                                    reiciendis molestias facere natus facilis ratione, cumque, quia error nobis id quod et?
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
+                                    </div>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
+                                    </div>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="product.html"><img class="img-responsive" src="static/image/product/product.png" /></a>
+                                    <div class="info">
+                                        <div class="pd-name">楊山勇力丸</div>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui eligendi accusamus?</p>
+                                    </div>
+                                    <div class="text-center mx-1 my-1">
+                                        <a href="product.html" class="btn btn-info btn-block">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            查看內容
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

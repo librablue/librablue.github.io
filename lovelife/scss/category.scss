@@ -1,0 +1,29 @@
+@import 'config';
+@import 'nav';
+@import 'pd-menu';
+@import 'share';
+@import 'footer';
+@import 'gotop';
+@import 'breadcrumb';
+
+.main {
+    padding: 48px 0;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-4px);
+    }
+    .info {
+        padding: 0 10px 20px;
+    }
+    .pd-name {
+        font-weight: 700;
+        text-align: center;
+        margin: 1em 0;
+    }
+}
