@@ -515,13 +515,13 @@ a:hover {
   }
 }
 
-.pd-menu {
+.side-menu {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.pd-menu .title {
+.side-menu .title {
   background-image: url("../image/product/sidebg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -530,40 +530,54 @@ a:hover {
   line-height: 58px;
   font-size: 1.4em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
-.pd-menu ul {
+.side-menu ul {
   list-style-type: none;
   padding: 0;
 }
 
-.pd-menu .series > li > a {
+.side-menu ul a {
   display: block;
-  background: #15cda8;
-  color: #fff;
-  border-radius: 4px;
-  padding: 2px 20px;
-  margin: 10px 0;
-  font-size: 1.2em;
+  padding: 10px 20px;
+  color: #565656;
+  font-weight: 700;
+  font-size: 1.5em;
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-.pd-menu .sub > li > a {
-  display: block;
-  padding: 4px 20px;
-  border-radius: 4px;
-  color: #4e4e4e;
-  text-decoration: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.side-menu ul a:hover {
+  background-color: transparent;
+  color: #85ef47;
 }
 
-.pd-menu .sub > li > a:hover {
-  background: #f2f7ff;
+.side-menu ul a:focus {
+  outline: none;
+  background: transparent;
 }
 
-.pd-menu .sub .active > a {
-  background: #f2f7ff;
+.side-menu ul .active a {
+  background-color: transparent;
+  color: #85ef47;
+}
+
+.side-menu ul .active a:hover {
+  background-color: transparent;
+  color: #85ef47;
+}
+
+.share {
+  background: #f3f3f3;
+  margin: 0;
+  text-align: center;
+}
+
+.share a {
+  display: inline-block;
+  margin: 10px;
 }
 
 footer {
@@ -616,33 +630,69 @@ footer {
   background: #fff;
 }
 
-.main h1 {
-  color: #b67c00;
-  font-weight: 700;
-  padding-bottom: 16px;
-  margin-bottom: 26px;
-  border-bottom: 1px solid #ddd;
+.main {
+  padding: 48px 0;
 }
 
-.main p {
-  font-size: 1.2em;
-  line-height: 2em;
+.title {
+  margin: 2em 0 1em;
+  font-size: 1.8em;
 }
 
-.main p.strong {
-  color: #444;
-  font-weight: 900;
-  font-style: italic;
-  padding-top: 20px;
+.description {
+  line-height: 2;
+  margin-bottom: 1.5em;
 }
 
-.main .content {
-  padding: 0 30px;
+.idea {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 0 15px;
+.idea li {
+  margin: 12px 0;
+}
+
+.idea li i {
+  color: #be1414;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media (min-width: 992px) {
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
   }
 }
 /*# sourceMappingURL=about.css.map */
