@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-        <link rel="stylesheet" href="static/css/download.css" />
+        <link rel="stylesheet" href="static/css/contact.css" />
     </head>
 
     <body>
@@ -57,13 +57,13 @@
                         <li>
                             <a href="news.html">最新消息</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="download.html">檔案下載</a>
                         </li>
                         <li>
                             <a href="faq.html">常見問題</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="contact.html">連絡我們</a>
                         </li>
                         <li>
@@ -96,82 +96,55 @@
         <section class="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="side-menu">
-                            <div class="title">檔案下載</div>
-                            <ul>
-                                <li class="active">
-                                    <a href="#">類別一</a>
-                                </li>
-                                <li>
-                                    <a href="#">類別二</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-9 pl-2">
+                    <div class="col-md-10 col-md-offset-1">
                         <ol class="breadcrumb text-right">
                             <li>
                                 <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
                             </li>
-                            <li class="active">檔案下載</li>
+                            <li class="active">連絡我們</li>
                         </ol>
-                        <h1 class="title">檔案下載</h1>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th class="text-center" style="width:80px">#</th>
-                                    <th>標題</th>
-                                    <th class="text-center" style="width:160px">日期</th>
-                                    <th class="text-center" style="width:100px">下載</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td>檔案一</td>
-                                    <td class="text-center">2019-01-25 00:00</td>
-                                    <td class="text-center">
-                                        <a href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td>檔案二</td>
-                                    <td class="text-center">2019-01-25 00:00</td>
-                                    <td class="text-center">
-                                        <a href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">3</td>
-                                    <td>檔案三</td>
-                                    <td class="text-center">2019-01-25 00:00</td>
-                                    <td class="text-center">
-                                        <a href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <nav class="text-center">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <h1 class="title">連絡我們</h1>
+                        <p class="description mb-2">愛生製藥擁有完整的專業訓練與服務，堅強研發、施工團隊，對於太陽光電建置之整體規劃與整合，已累積多年經驗，並且擁有〝甲級〞電器承裝業執照，提供客戶太陽光電發電系統整合、整體規劃及穩定可靠的施工品質以及優質服務，銓泰提供您最高品質及最專業、最快速、最誠摯的服務，為您創造最大的價值，關於任何問題，歡迎隨時來信洽詢，或撥打客服專線06-2031880，讓我們為您服務。 </p>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 group">
+                                    <label for="txtName" control-label">姓名</label>
+                                    <input type="text" class="form-control" id="txtName" placeholder="請輸入姓名" />
+                                </div>
+                                <div class="col-md-6 group">
+                                    <label for="txtEmail" class="control-label">E-Mail</label>
+                                    <input type="text" class="form-control" id="txtEmail" placeholder="請輸入E-Mail" />
+                                </div>
+                                <div class="col-md-6 group">
+                                    <label for="txtPhone" class="control-label">電話</label>
+                                    <input type="tel" class="form-control" id="txtPhone" placeholder="請輸入電話" />
+                                </div>
+                                <div class="col-md-6 group">
+                                    <label for="txtFax" class="control-label">傳真</label>
+                                    <input type="tel" class="form-control" id="txtFax" placeholder="請輸入傳真" />
+                                </div>
+                                <div class="col-md-12 group">
+                                    <label for="txtAddress" class="control-label">地址</label>
+                                    <input type="text" class="form-control" id="txtAddress" placeholder="請輸入地址" />
+                                </div>
+                                <div class="col-md-12 group">
+                                    <label for="txtTitle" class="control-label">主題</label>
+                                    <input type="text" class="form-control" id="txtTitle" placeholder="請輸入主題" />
+                                </div>
+                                <div class="col-md-12 group">
+                                    <label for="txtContent" class="control-label">內容</label>
+                                    <textarea id="txtContent" class="form-control" cols="30" rows="10" placeholder="說點什麼吧..."></textarea>
+                                </div>
+                                <div class="col-md-12 group text-right">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn-send">
+                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                            發 送
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

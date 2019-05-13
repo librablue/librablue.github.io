@@ -544,6 +544,7 @@ a:hover {
   color: #565656;
   font-weight: 700;
   font-size: 1.5em;
+  text-decoration: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }

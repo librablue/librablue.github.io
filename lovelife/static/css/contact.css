@@ -515,13 +515,13 @@ a:hover {
   }
 }
 
-.pd-menu {
+.side-menu {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.pd-menu .title {
+.side-menu .title {
   background-image: url("../image/product/sidebg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -530,40 +530,54 @@ a:hover {
   line-height: 58px;
   font-size: 1.4em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
-.pd-menu ul {
+.side-menu ul {
   list-style-type: none;
   padding: 0;
 }
 
-.pd-menu .series > li > a {
+.side-menu ul a {
   display: block;
-  background: #15cda8;
-  color: #fff;
-  border-radius: 4px;
-  padding: 2px 20px;
-  margin: 10px 0;
-  font-size: 1.2em;
+  padding: 10px 20px;
+  color: #565656;
+  font-weight: 700;
+  font-size: 1.5em;
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-.pd-menu .sub > li > a {
-  display: block;
-  padding: 4px 20px;
-  border-radius: 4px;
-  color: #4e4e4e;
-  text-decoration: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.side-menu ul a:hover {
+  background-color: transparent;
+  color: #85ef47;
 }
 
-.pd-menu .sub > li > a:hover {
-  background: #f2f7ff;
+.side-menu ul a:focus {
+  outline: none;
+  background: transparent;
 }
 
-.pd-menu .sub .active > a {
-  background: #f2f7ff;
+.side-menu ul .active a {
+  background-color: transparent;
+  color: #85ef47;
+}
+
+.side-menu ul .active a:hover {
+  background-color: transparent;
+  color: #85ef47;
+}
+
+.share {
+  background: #f3f3f3;
+  margin: 0;
+  text-align: center;
+}
+
+.share a {
+  display: inline-block;
+  margin: 10px;
 }
 
 footer {
@@ -616,46 +630,76 @@ footer {
   background: #fff;
 }
 
-.main h1 {
-  color: #b67c00;
-  font-weight: 700;
-  padding-bottom: 16px;
-  margin-bottom: 26px;
-  border-bottom: 1px solid #ddd;
+.main {
+  padding: 48px 0;
 }
 
-.main .content {
-  padding: 0 30px;
+h1.title {
+  position: relative;
+  margin-bottom: 1.6em;
+  padding: 0 0 10px 40px;
+  border-bottom: 3px solid #0ca53d;
+  font-size: 1.8em;
 }
 
-.main .company-info .title {
-  background: #305f72;
-  color: #fff;
-  border-radius: 4px;
-  text-align: center;
-  padding: 6px 0;
+.contact-form {
+  border-top: #ccc solid 1px;
+  border-bottom: #ccc solid 1px;
+  -webkit-box-shadow: 0 0 5px #333;
+          box-shadow: 0 0 5px #333;
+  padding: 3em 4em;
 }
 
-.main .company-info ul {
-  list-style-type: none;
-  padding: 10px;
+.contact-form .group {
+  margin: 10px 0;
 }
 
-.main .company-info ul li {
-  padding: 6px 0;
+.contact-form .group .form-control {
+  font-size: 16px;
 }
 
-.main .form-control {
+.contact-form .group .form-control:focus {
+  border-color: #ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-form .group input.form-control {
+  height: 48px;
+  border: none;
+  border-bottom: #ccc solid 1px;
   border-radius: 0;
+  background: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.main input.form-control {
-  height: 40px;
+.btn-send {
+  display: inline-block;
+  padding: 0 40px;
+  line-height: 43px;
+  font-size: 16px;
+  font-weight: bold;
+  border: #000 solid 2px;
+  background: #fff;
+  letter-spacing: 3px;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 0 15px;
+.btn-send:hover {
+  border-color: #323232;
+  color: #fff;
+  background: #323232;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-form {
+    padding: 2em;
+  }
+  .description {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -582,7 +582,7 @@ footer {
 .main {
   background-image: url("../image/index/bg1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 40px 0 12em;
 }
 
