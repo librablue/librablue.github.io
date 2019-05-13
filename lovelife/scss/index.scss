@@ -5,16 +5,12 @@
 @import 'gotop';
 
 .layer {
-    background-image: url('../image/index/bg2.png');
+    background-image: url('../image/index/bg.jpg');
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .main {
-    background-image: url('../image/index/bg1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 40px 0 12em;
     .company-container {
         border: 3px solid #fff;
