@@ -4,9 +4,17 @@
 @import 'footer';
 @import 'gotop';
 
-.layer {
-    background-image: url('../image/index/bg.jpg');
+.layer1 {
+    background-image: url('../image/index/bg4.png');
     background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-size: cover;
+}
+
+.layer2 {
+    background-image: url('../image/index/bg2.png');
+    background-repeat: no-repeat;
+    // background-position: center bottom;
     background-size: cover;
 }
 
@@ -72,6 +80,7 @@
 }
 
 .products {
+    margin-top: 3em;
     padding-bottom: 4em;
     h2 {
         text-align: center;
@@ -106,8 +115,7 @@
 
 @media screen and (max-width: $md-width) {
     .main {
-        background-image: none;
-
+        padding-bottom: 0;
         .company-container {
             h1 {
                 text-align: center;
@@ -116,13 +124,5 @@
                 text-align: center;
             }
         }
-    }
-
-    .layer {
-        background-image: none;
-        background: linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-        background: -moz-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-        background: -webkit-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-        background: -o-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
     }
 }

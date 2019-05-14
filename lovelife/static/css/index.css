@@ -572,8 +572,15 @@ footer {
   border-bottom: 12px solid #fff;
 }
 
-.layer {
-  background-image: url("../image/index/bg.jpg");
+.layer1 {
+  background-image: url("../image/index/bg4.png");
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-size: cover;
+}
+
+.layer2 {
+  background-image: url("../image/index/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -649,6 +656,7 @@ footer {
 }
 
 .products {
+  margin-top: 3em;
   padding-bottom: 4em;
 }
 
@@ -688,19 +696,13 @@ footer {
 
 @media screen and (max-width: 992px) {
   .main {
-    background-image: none;
+    padding-bottom: 0;
   }
   .main .company-container h1 {
     text-align: center;
   }
   .main .company-container p {
     text-align: center;
-  }
-  .layer {
-    background-image: none;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(34%, #91e2fe), color-stop(60%, #e2edf8));
-    background: linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
-    background: -o-linear-gradient(0deg, #91e2fe 34%, #e2edf8 60%);
   }
 }
 /*# sourceMappingURL=index.css.map */
