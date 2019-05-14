@@ -515,13 +515,13 @@ a:hover {
   }
 }
 
-.side-menu {
+.pd-menu {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.side-menu .title {
+.pd-menu .title {
   background-image: url("../image/product/sidebg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -530,43 +530,40 @@ a:hover {
   line-height: 58px;
   font-size: 1.4em;
   text-align: center;
-  margin-bottom: 1em;
 }
 
-.side-menu ul {
+.pd-menu ul {
   list-style-type: none;
   padding: 0;
 }
 
-.side-menu ul a {
+.pd-menu .series > li > a {
   display: block;
-  padding: 10px 20px;
-  color: #565656;
-  font-weight: 700;
-  font-size: 1.5em;
+  background: #15cda8;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 20px;
+  margin: 10px 0;
+  font-size: 1.2em;
   text-decoration: none;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
 }
 
-.side-menu ul a:hover {
-  background-color: transparent;
-  color: #85ef47;
+.pd-menu .sub > li > a {
+  display: block;
+  padding: 4px 20px;
+  border-radius: 4px;
+  color: #4e4e4e;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.side-menu ul a:focus {
-  outline: none;
-  background: transparent;
+.pd-menu .sub > li > a:hover {
+  background: #f2f7ff;
 }
 
-.side-menu ul .active a {
-  background-color: transparent;
-  color: #85ef47;
-}
-
-.side-menu ul .active a:hover {
-  background-color: transparent;
-  color: #85ef47;
+.pd-menu .sub .active > a {
+  background: #f2f7ff;
 }
 
 .share {
@@ -664,39 +661,13 @@ h1.title {
   color: #4a4a4a;
 }
 
-.card {
-  position: relative;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+.btn-blue {
+  background: #6698cb;
+  color: #fff;
 }
 
-.card.card-success {
-  border-bottom: solid 3px #4caf50;
-  border-radius: 3px;
-}
-
-.card .card-header {
-  padding: 15px 20px;
-  padding: 1.5rem 2rem;
-  background-color: #4caf50;
-  color: #f5f5f5;
-  border: 0;
-}
-
-.card .card-block {
-  padding: 2rem;
-}
-
-.card .list-unstyled li {
-  line-height: 2;
-}
-
-.card .color-success {
-  color: #4caf50 !important;
-}
-
-.card .color-warning {
-  color: #ff9800 !important;
+.btn-green {
+  background: #82c8a0;
+  color: #fff;
 }
 /*# sourceMappingURL=cart.css.map */

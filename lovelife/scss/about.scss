@@ -10,8 +10,11 @@
     padding: 48px 0;
 }
 
-.title {
-    margin: 2em 0 1em;
+h1.title {
+    position: relative;
+    margin-bottom: 1.6em;
+    padding: 0 0 10px 40px;
+    border-bottom: 3px solid #0ca53d;
     font-size: 1.8em;
 }
 

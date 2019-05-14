@@ -1,6 +1,6 @@
 @import 'config';
 @import 'nav';
-@import 'side';
+@import 'pd-menu';
 @import 'share';
 @import 'footer';
 @import 'gotop';
@@ -19,9 +19,7 @@ h1.title {
 }
 
 .contact-form {
-    border-top: #ccc solid 1px;
-    border-bottom: #ccc solid 1px;
-    box-shadow: 0 0 5px #333;
+    border: #ccc solid 1px;
     padding: 3em 4em;
     .group {
         margin: 10px 0;
