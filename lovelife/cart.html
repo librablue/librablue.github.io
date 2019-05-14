@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-        <link rel="stylesheet" href="static/css/news.css" />
+        <link rel="stylesheet" href="static/css/cart.css" />
     </head>
 
     <body>
@@ -51,10 +51,10 @@
                         <li>
                             <a href="category.html">產品目錄</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="cart.html">詢價車</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="news.html">最新消息</a>
                         </li>
                         <li>
@@ -95,75 +95,115 @@
         </header>
         <section class="main">
             <div class="container">
+                <ol class="breadcrumb text-right">
+                    <li>
+                        <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="active">詢價車</li>
+                </ol>
+                <h1 class="title">詢價車</h1>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="side-menu">
-                            <div class="title">最新消息</div>
-                            <ul>
-                                <li class="active">
-                                    <a href="#">訊息公告</a>
-                                </li>
-                                <li>
-                                    <a href="#">活動花絮</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-9 pl-2">
-                        <ol class="breadcrumb text-right">
-                            <li>
-                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-                            </li>
-                            <li class="active">最新消息</li>
-                        </ol>
-                        <h1 class="title">最新消息</h1>
-                        <table class="table">
+                    <div class="col-md-9">
+                        <table class="table table-responsive cart-item">
                             <thead>
-                                <tr>
-                                    <th class="text-center" style="width:160px">日期</th>
-                                    <th>標題</th>
-                                </tr>
+                                <th class="text-center w120"></th>
+                                <th class="pd-name">商品名稱</th>
+                                <th class="text-center w120">數量</th>
+                                <th class="w120"></th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-center">2019-01-25</td>
-                                    <td>
-                                        <a href="news-info.html">最新消息最新消息</a>
+                                    <td class="text-center">
+                                        <img class="img-responsive" src="static/image/product/product.png" alt="" />
+                                    </td>
+                                    <td class="pd-name">陽山勇力丸</td>
+                                    <td class="text-center">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="remove"><i class="fa fa-2x fa-trash-o" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">2019-01-25</td>
-                                    <td>
-                                        <a href="news-info.html">最新消息最新消息</a>
+                                    <td class="text-center">
+                                        <img class="img-responsive" src="static/image/product/product.png" alt="" />
+                                    </td>
+                                    <td class="pd-name">陽山勇力丸</td>
+                                    <td class="text-center">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="remove"><i class="fa fa-2x fa-trash-o" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">2019-01-25</td>
-                                    <td>
-                                        <a href="news-info.html">最新消息最新消息</a>
+                                    <td class="text-center">
+                                        <img class="img-responsive" src="static/image/product/product.png" alt="" />
+                                    </td>
+                                    <td class="pd-name">陽山勇力丸</td>
+                                    <td class="text-center">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="remove"><i class="fa fa-2x fa-trash-o" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <nav class="text-center">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-success">
+                            <div class="card-header">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                Summary
+                            </div>
+                            <div class="card-block">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <strong>陽山勇泉丸:</strong>
+                                        10
+                                    </li>
+                                    <li>
+                                        <strong>陽山勇力丸:</strong>
+                                        20
+                                    </li>
+                                    <li>
+                                        <strong>藥膏:</strong>
+                                        30
+                                    </li>
+                                    <li>
+                                        <strong>運費:</strong>
+                                        <span class="color-warning">80</span>
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <strong>Total:</strong>
+                                    <span class="color-success">1000</span>
+                                </h3>
+                                <a href="javascript:void(0)" class="btn btn-raised btn-success btn-block btn-raised mt-2 no-mb">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    購 買
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
