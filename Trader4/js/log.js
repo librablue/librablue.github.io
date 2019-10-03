@@ -38,7 +38,7 @@ window.onload = function () {
 
 
 
-   pushHistory();
+//    pushHistory();
 
     window.addEventListener("popstate", function (e) {
 
