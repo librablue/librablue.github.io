@@ -715,7 +715,7 @@
     transform: translate(-50%, 0);
   }
 }
-#target {
+#target,#target2 {
   border: none;
   font-size: 22px;
   background: none;
