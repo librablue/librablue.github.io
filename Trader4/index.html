@@ -401,7 +401,6 @@
             var clipboard = new Clipboard('#copy_btn');
             clipboard.on('success', function(e) {
               alert("复制成功，打开微信添加好友", 1500);
-              window.location.href = 'weixin://';
               e.clearSelection();
               console.log(e.clearSelection);
             });
@@ -422,7 +421,6 @@
           var clipboard = new Clipboard('#copy_btn2');
           clipboard.on('success', function(e) {
             alert("复制成功，打开QQ添加好友", 1500);
-            window.location.href = 'weixin://';
             e.clearSelection();
             console.log(e.clearSelection);
           });
