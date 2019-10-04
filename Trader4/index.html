@@ -394,13 +394,13 @@
               document.write(weixin);
             </script>
           </span>
-        <a href="#" class="btn" style="padding:0" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn" style="color: #e62955;"><img style="width:80%" src="./index_files/trabt1.png"> </a>
+        <button class="btn" style="padding:0" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn" style="color: #e62955;"><img style="width:80%" src="./index_files/trabt1.png"> </button>
         <script>
           $(document).ready(function() {
-            $('#copy_btn').attr('href', 'tencent://message/?uin=' + weixin);
             var clipboard = new Clipboard('#copy_btn');
             clipboard.on('success', function(e) {
               alert("复制成功，打开微信添加好友", 1500);
+              window.location.href = 'weixin://';
               e.clearSelection();
               console.log(e.clearSelection);
             });
@@ -414,13 +414,13 @@
             document.write(QQ);
           </script>
         </span>
-      <a href="#" class="btn" style="padding:0" data-clipboard-action="copy" data-clipboard-target="#target2" id="copy_btn2" style="color: #53bf65;"><img style="width:80%" src="./index_files/trabt2.png"> </a>
+      <button href="#" class="btn" style="padding:0" data-clipboard-action="copy" data-clipboard-target="#target2" id="copy_btn2" style="color: #53bf65;"><img style="width:80%" src="./index_files/trabt2.png"> </button>
       <script>
         $(document).ready(function() {
-          $('#copy_btn2').attr('href', 'tencent://message/?uin=' + QQ);
           var clipboard = new Clipboard('#copy_btn2');
           clipboard.on('success', function(e) {
             alert("复制成功，打开QQ添加好友", 1500);
+            window.location.href = 'tencent://';
             e.clearSelection();
             console.log(e.clearSelection);
           });
