@@ -420,7 +420,7 @@
           var clipboard = new Clipboard('#copy_btn2');
           clipboard.on('success', function(e) {
             alert("复制成功，打开QQ添加好友", 1500);
-            window.location.href = 'tencent://';
+            window.location.href = 'tencent://message/?uin=' + QQ;
             e.clearSelection();
             console.log(e.clearSelection);
           });
