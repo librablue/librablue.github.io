@@ -164,7 +164,7 @@
 			}
 		});
 	};
-	scrollWindow();
+	// scrollWindow();
 
 	var contentWayPoint = function () {
 		var i = 0;
